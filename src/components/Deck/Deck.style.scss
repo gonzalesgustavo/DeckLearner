@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+.deck_container {
+  display: flex;
+  position: relative;
+  width: 10rem;
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  background: linear-gradient(
+    90deg,
+    rgb(119, 81, 56) 0%,
+    rgb(165, 142, 113) 35%,
+    rgb(128, 141, 143) 100%
+  );
+  .deck_title {
+    z-index: 10000;
+    h3 {
+      font-size: 14pt;
+      margin-top: -9px;
+      color: rgb(28, 51, 59);
+      font-family: 'Indie Flower', cursive;
+      font-weight: 600;
+      
+    }
+  }
+}
+
+.deck_deco {
+  position: absolute;
+  width: 10rem;
+  height: 5rem;
+  border: 2px solid black;
+  background: linear-gradient(
+    90deg,
+    rgb(119, 81, 56) 0%,
+    rgb(165, 142, 113) 35%,
+    rgb(128, 141, 143) 100%
+  );
+  transform: rotate(80deg);
+  &:nth-child(1) {
+    transform: rotate(5deg);
+  }
+  &:nth-child(2) {
+    transform: rotate(10deg);
+    box-shadow: 1px 1px 15px 1px rgb(122, 122, 122);
+  }
+  &:nth-child(3) {
+    transform: rotate(0deg);
+    box-shadow: 1px 1px 15px 1px rgb(122, 122, 122);
+  }
+  .deco-line {
+    width: 100%;
+    border: 1px solid black;
+    transform: translateY(10px);
+    opacity: 0.3;
+    &:nth-child(2) {
+      height: 0.2px;
+      border: none;
+      border-bottom: 1px solid black;
+      transform: translateY(20px);
+    }
+    &:nth-child(3) {
+      height: 0.2px;
+      border: none;
+      border-bottom: 1px solid black;
+      transform: translateY(30px);
+    }
+    &:nth-child(4) {
+        height: 0.2px;
+        border: none;
+        border-bottom: 1px solid black;
+        transform: translateY(40px);
+      }    
+      &:nth-child(5) {
+        height: 0.2px;
+        border: none;
+        border-bottom: 1px solid black;
+        transform: translateY(50px);
+      }
+      &:nth-child(6) {
+        height: 0.2px;
+        border: none;
+        border-bottom: 1px solid black;
+        transform: translateY(60px);
+      }
+      &:nth-child(7) {
+        height: 0.2px;
+        border: none;
+        border-bottom: 1px solid black;
+        transform: translateY(70px);
+      }
+  }
+}
