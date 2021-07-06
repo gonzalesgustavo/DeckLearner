@@ -7,5 +7,5 @@ export interface IRoute {
 }
 
 export interface IPage {
-    
+    name: string;
 }
