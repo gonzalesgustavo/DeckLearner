@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.DeckBar_container {
+    width: 14%;
+    height: 100vh;
+    padding: 1rem;
+    border-right: 1px solid black;
+    background: rgb(177, 204, 255);
+    .DeckBar_body {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        max-height: 85vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    h4 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-weight: 700;
+        font-family: 'Indie Flower', cursive;
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        border-radius: 5px;
+        box-shadow: inset 0 0 10px rgba(255, 77, 225, 0.842);
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: rgba(144, 5, 144, 0.76);
+        &:hover {
+            background: rgb(135, 251, 255);
+            border: 1px solid blue;
+        }
+    }
+}
