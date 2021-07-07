@@ -1,9 +1,9 @@
 import React from 'react'
-import Deck from '../components/Deck/Deck';
+import DeckBar from '../components/DeckBar/DeckBar';
 import { IPage } from '../types'
 
 const Home: React.FunctionComponent<IPage> = props => {
-    return <div style={{padding: '2rem'}}><Deck title="Deutch learning system" /></div>
+    return <div ><DeckBar /></div>
 }
 
 export default Home;
