@@ -1,36 +1,23 @@
 import React from "react";
-import { ReactNode } from "react";
+import Modal from "../Modal/Model";
+import SwipeActionButton from "../SwipeActionButton/SwipeActionButton";
 import "./DeckModal.style.scss";
 interface DeckModalProps {
-  children?: ReactNode;
+  id?:string;
 }
 const DeckModal: React.FunctionComponent<DeckModalProps> = (props) => {
-  const { children } = props;
+  const { id } = props;
+
+  const actions = [
+    <SwipeActionButton className="green_light">Study</SwipeActionButton>,
+    <SwipeActionButton backGround="rgb(241, 156, 156)">
+      Deactivate
+    </SwipeActionButton>,
+  ];
+
   return (
-    <div className="modal_backdrop">
-      <div className="modal_modal">
-        <div className="modal_title">
-          <h3>Title....</h3>
-          <div className="modal-top_actions">
-            <button>
-              <div className="modal_circle">
-                <span>X</span>
-              </div>
-            </button>
-          </div>
-        </div>
-        <div className="modal_body">{children}</div>
-        <div className="modal_actions">
-          <button className="opal_btn ">
-            <span>Study</span>
-            <div className="btn_background green_light"></div>
-          </button>
-          <button className="opal_btn">
-            <span>Deactivate</span>
-            <div className="btn_background yellow_orange"></div>
-          </button>
-        </div>
-      </div>
+    <div className="DeckModal_container">
+      <Modal actions={actions}><p>hello</p></Modal>
     </div>
   );
 };
